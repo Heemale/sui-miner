@@ -18,12 +18,13 @@ import {useCurrentAccount} from "@mysten/dapp-kit";
 import {message} from "antd";
 import {formatNumberWithCommas} from "@/utils";
 import './styles.css';
+import Link from "next/link";
 
 const data = [
     {
         imageUrl: "mining/data1.svg",
         title: "SUI staking club market cap",
-        price: "875,452",
+        price: "142.16 M",
     },
     {
         imageUrl: "mining/data2.svg",
@@ -33,7 +34,7 @@ const data = [
     {
         imageUrl: "mining/data3.svg",
         title: "SUI staking club fee",
-        price: "142.16 M",
+        price: "875,452",
     },
 ];
 
@@ -345,8 +346,16 @@ export default function Mining() {
                                         <span>4. Learn More About SUI: </span>
                                         <span className="text-[#474747]">For additional information about SUI, please visit:</span>
                                     </div>
-                                    <div>· CoinMarketCap: SUI</div>
-                                    <div>· SUI Documentation: SUI Documentation</div>
+                                    <div>
+                                        <Link href="https://coinmarketcap.com/currencies/sui/">
+                                            · CoinMarketCap: SUI
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link href="https://docs.sui.io">
+                                            · SUI Documentation: SUI Documentation
+                                        </Link>
+                                    </div>
                                 </div>
                                 <div className="flex flex-col gap-3">
                                     <div className="leading-loose">

@@ -14,18 +14,18 @@ const Navbar = () => {
             </div>
             <div className="flex flex-row gap-3 md:gap-20">
                 <div className="text-white text-xs md:text-base my-auto">
-                    <Link href="/staking">
-                        <div className="self-center">
+                    <div className="self-center">
+                        <Link href="/staking">
                             Staking
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
                 </div>
                 <div className="text-white text-xs md:text-base my-auto">
-                    <Link href="/">
-                        <div className="self-center">
+                    <div className="self-center">
+                        <Link href="https://sui.bluemove.net/profile/223486">
                             NFT
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
                 </div>
                 <ConnectButton className="connectButton" style={{
                     color: "white",
