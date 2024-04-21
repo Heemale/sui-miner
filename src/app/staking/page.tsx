@@ -17,6 +17,7 @@ import {getEarningInfo} from "@/api/earning";
 import {useCurrentAccount} from "@mysten/dapp-kit";
 import {message} from "antd";
 import {formatNumberWithCommas} from "@/utils";
+import './styles.css';
 
 const data = [
     {
@@ -302,7 +303,7 @@ export default function Mining() {
                             </TableBody>
                         </Table>
                         <div className="flex flex-col text-white gap-6">
-                            <div className="text-[#b32be9] text-xl lg:text-start md:text-2xl lg:text-3xl">
+                            <div className="text-title-color font-bold text-xl lg:text-start md:text-2xl lg:text-3xl">
                                 Instructions for SUI Staking
                             </div>
                             <div>Welcome to the Sui Arca Staking program! Our mission is to foster a thriving Sui Arca
@@ -312,7 +313,7 @@ export default function Mining() {
                             <div className="flex flex-col gap-3">
                                 <div className="leading-loose">
                                     <span>
-                                        1. Understanding Yield Farming:&nbsp;
+                                        1. Understanding Yield Farming:
                                     </span>
                                     <span className="text-[#474747]">
                                         Yield Farming is an investment strategy with inherent
@@ -324,7 +325,7 @@ export default function Mining() {
                                     </span>
                                 </div>
                                 <div className="leading-loose">
-                                    <span>2. Yield Farming Return:&nbsp;</span>
+                                    <span>2. Yield Farming Return: </span>
                                     <span className="text-[#474747]">
                                         The Yield Farming Return for each period is calculated based
                                         on an
@@ -332,7 +333,7 @@ export default function Mining() {
                                     </span>
                                 </div>
                                 <div className="leading-loose">
-                                    <span>3. Participation Limitations:&nbsp;</span>
+                                    <span>3. Participation Limitations: </span>
                                     <span className="text-[#474747]">
                                         To encourage broad community participation, each address
                                         is
@@ -341,7 +342,7 @@ export default function Mining() {
                                 </div>
                                 <div className="flex flex-col gap-3">
                                     <div className="leading-loose">
-                                        <span>4. Learn More About SUI:&nbsp;</span>
+                                        <span>4. Learn More About SUI: </span>
                                         <span className="text-[#474747]">For additional information about SUI, please visit:</span>
                                     </div>
                                     <div>· CoinMarketCap: SUI</div>
@@ -349,14 +350,14 @@ export default function Mining() {
                                 </div>
                                 <div className="flex flex-col gap-3">
                                     <div className="leading-loose">
-                                        <span>5. Contact Us:&nbsp;</span>
+                                        <span>5. Contact Us: </span>
                                         <span className="text-[#474747]">If you have any questions or need assistance, please contact us</span>
                                     </div>
                                     <div>
                                         Email: suiarcanft@gmail.com
                                     </div>
                                     <div>
-                                        Whatsapp : +1(365)897-4103
+                                        Whatsapp: +1(365)897-4103
                                     </div>
                                 </div>
                             </div>

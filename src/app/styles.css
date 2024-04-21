@@ -1,0 +1,42 @@
+.NFTmarket {
+    background: linear-gradient(180deg, #5F65FB 0%, #D426FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: Inter;
+}
+.NFTmarket1{
+    color: rgba(166, 166, 149, 1);
+}
+.NFTmarket2{
+    color: rgba(166, 166, 149, 1);
+}
+.backgroundColorImage{
+    background: url('../../public/nft/backgroundColor.png') no-repeat;
+    background-size: 100% 100%;
+    flex-grow:1;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:770px) {
+    .CollectAndProsper{
+        color: #fff;
+        font-size: 1.4rem;
+    }
+    .CollectAndProsperNext{
+        color: rgba(166, 166, 149, 1);
+        font-size: 1.125rem;
+    }
+    .withsuiseaworld{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (min-width:770px) {
+    .CollectAndProsper{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .CollectAndProsperNext{
+        color: rgba(166, 166, 149, 1);
+        font-size: 1.125rem;
+    }
+}

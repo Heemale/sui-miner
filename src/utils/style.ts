@@ -13,11 +13,13 @@ export const StyledTableCell = styled(TableCell)(({theme}) => ({
             fontSize: '12px', // 在小屏幕上将字体大小调整为12像素
             lineHeight: '14px', // 在小屏幕下修改行间距
             overflowWrap: 'break-word', // 文本溢出时换行
+            // whiteSpace: 'nowrap', // 防止文本换行
         },
         [theme.breakpoints.up('sm')]: {
             fontSize: '20px', // 在大屏幕上将字体大小调整为20像素
             lineHeight: '14px', // 在小屏幕下修改行间距
             overflowWrap: 'break-word', // 文本溢出时换行
+            // whiteSpace: 'nowrap', // 防止文本换行
         },
     },
     [`&.${tableCellClasses.body}`]: {
@@ -31,13 +33,14 @@ export const StyledTableCell = styled(TableCell)(({theme}) => ({
         [theme.breakpoints.down('sm')]: {
             fontSize: '12px', // 在小屏幕上将字体大小调整为12像素
             lineHeight: '14px', // 在小屏幕下修改行间距
-            overflowWrap: 'break-word', // 文本溢出时换行
+            // overflowWrap: 'break-word', // 文本溢出时换行
+            whiteSpace: 'nowrap', // 防止文本换行
         },
         [theme.breakpoints.up('sm')]: {
             fontSize: '20px', // 在大屏幕上将字体大小调整为20像素
             lineHeight: '14px', // 在小屏幕下修改行间距
-            overflowWrap: 'break-word', // 文本溢出时换行
-
+            // overflowWrap: 'break-word', // 文本溢出时换行
+            whiteSpace: 'nowrap', // 防止文本换行
         },
     },
 }));

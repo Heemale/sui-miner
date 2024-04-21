@@ -14,9 +14,9 @@ const Navbar = () => {
             </div>
             <div className="flex flex-row gap-3 md:gap-20">
                 <div className="text-white text-xs md:text-base my-auto">
-                    <Link href="/mining">
+                    <Link href="/staking">
                         <div className="self-center">
-                            Mining
+                            Staking
                         </div>
                     </Link>
                 </div>
