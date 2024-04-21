@@ -113,32 +113,32 @@ const createData = (
 const rows = [
     createData(
         '12hrs',
-        `>=${formatNumberWithCommas(cards[0].minimum)}`,
+        `${formatNumberWithCommas(cards[0].minimum)}--${formatNumberWithCommas(cards[1].minimum)}`,
         `${percentageRanges[0].min}% - ${percentageRanges[0].max}%`
     ),
     createData(
         '48hrs',
-        `>=${formatNumberWithCommas(cards[1].minimum)}`,
+        `${formatNumberWithCommas(cards[1].minimum)}--${formatNumberWithCommas(cards[2].minimum)}`,
         `${percentageRanges[1].min}% - ${percentageRanges[1].max}%`
     ),
     createData(
         '7days',
-        `>=${formatNumberWithCommas(cards[2].minimum)}`,
+        `${formatNumberWithCommas(cards[2].minimum)}--${formatNumberWithCommas(cards[3].minimum)}`,
         `${percentageRanges[2].min}% - ${percentageRanges[2].max}%`
     ),
     createData(
         '30days',
-        `>=${formatNumberWithCommas(cards[3].minimum)}`,
+        `${formatNumberWithCommas(cards[3].minimum)}--${formatNumberWithCommas(cards[4].minimum)}`,
         `${percentageRanges[3].min}% - ${percentageRanges[3].max}%`
     ),
     createData(
         '60days',
-        `>=${formatNumberWithCommas(cards[4].minimum)}`,
+        `${formatNumberWithCommas(cards[4].minimum)}--${formatNumberWithCommas(cards[5].minimum)}`,
         `${percentageRanges[4].min}% - ${percentageRanges[4].max}%`
     ),
     createData(
         '90days',
-        `>=${formatNumberWithCommas(cards[5].minimum)}`,
+        `>50,000`,
         `${percentageRanges[5].min}% - ${percentageRanges[5].max}%`
     ),
 ];
@@ -282,12 +282,12 @@ export default function Mining() {
                             </div>
                         </div>
                     </div>
-                    <div className="mx-5 md:mx-20">
+                    <div className="flex flex-col mx-5 md:mx-20 gap-8">
                         <Table aria-label="customized table">
                             <TableHead>
                                 <TableRow>
-                                    <StyledTableCell align="left">&nbsp;</StyledTableCell>
-                                    <StyledTableCell align="left">&nbsp;</StyledTableCell>
+                                    <StyledTableCell align="left">Period</StyledTableCell>
+                                    <StyledTableCell align="left">Amount (SUl)</StyledTableCell>
                                     <StyledTableCell align="left">Yield Farming Return</StyledTableCell>
                                 </TableRow>
                             </TableHead>
@@ -301,6 +301,66 @@ export default function Mining() {
                                 ))}
                             </TableBody>
                         </Table>
+                        <div className="flex flex-col text-white gap-6">
+                            <div className="text-[#b32be9] text-xl lg:text-start md:text-2xl lg:text-3xl">
+                                Instructions for SUI Staking
+                            </div>
+                            <div>Welcome to the Sui Arca Staking program! Our mission is to foster a thriving Sui Arca
+                                community. Before participating in any staking period, please review the following
+                                instructions:
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <div className="leading-loose">
+                                    <span>
+                                        1. Understanding Yield Farming:&nbsp;
+                                    </span>
+                                    <span className="text-[#474747]">
+                                        Yield Farming is an investment strategy with inherent
+                                        risks and
+                                        volatility. It involves staking or lending cryptocurrency assets on
+                                        decentralized
+                                        finance (DeFi)
+                                        platforms to potentially earn higher returns.
+                                    </span>
+                                </div>
+                                <div className="leading-loose">
+                                    <span>2. Yield Farming Return:&nbsp;</span>
+                                    <span className="text-[#474747]">
+                                        The Yield Farming Return for each period is calculated based
+                                        on an
+                                        annual investment return over 365 days.
+                                    </span>
+                                </div>
+                                <div className="leading-loose">
+                                    <span>3. Participation Limitations:&nbsp;</span>
+                                    <span className="text-[#474747]">
+                                        To encourage broad community participation, each address
+                                        is
+                                        limited to staking once per period.
+                                    </span>
+                                </div>
+                                <div className="flex flex-col gap-3">
+                                    <div className="leading-loose">
+                                        <span>4. Learn More About SUI:&nbsp;</span>
+                                        <span className="text-[#474747]">For additional information about SUI, please visit:</span>
+                                    </div>
+                                    <div>· CoinMarketCap: SUI</div>
+                                    <div>· SUI Documentation: SUI Documentation</div>
+                                </div>
+                                <div className="flex flex-col gap-3">
+                                    <div className="leading-loose">
+                                        <span>5. Contact Us:&nbsp;</span>
+                                        <span className="text-[#474747]">If you have any questions or need assistance, please contact us</span>
+                                    </div>
+                                    <div>
+                                        Email: suiarcanft@gmail.com
+                                    </div>
+                                    <div>
+                                        Whatsapp : +1(365)897-4103
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>

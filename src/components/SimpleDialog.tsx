@@ -153,11 +153,11 @@ const SimpleDialog = () => {
             <div className="flex flex-col gap-4 mx-4">
                 <div className="text-white font-bold">My earnings</div>
                 <div className="flex justify-between text-white">
-                    <div className="text-[#909090]">Expected profit:</div>
+                    <div className="text-[#909090]">Expected Annual Profit:</div>
                     <div className="text-[#909090]">{expectEarning === "" ? "---" : expectEarning}</div>
                 </div>
                 <div className="flex justify-between text-white">
-                    <div className="text-[#909090]">Cumulative profit:</div>
+                    <div className="text-[#909090]">Accumulated Annual Profit:</div>
                     <div className="text-[#909090]">{accrueEarning === "" ? "---" : accrueEarning}</div>
                 </div>
                 <div className="text-white font-bold">

@@ -43,7 +43,7 @@ export default function Nft() {
                 </div>
             </div>
             <div className="flex flex-col content-center items-center mt-20 gap-7">
-                <div>
+                <div className="flex gap-6">
                     <Link href="https://opensea.io/collection/karmapi-arcana">
                         <Button variant="contained" color="secondary" sx={{
                             background: 'linear-gradient(45deg, #705bfb, #9945fd, #c52efe)',
@@ -59,6 +59,23 @@ export default function Nft() {
                             textTransform: 'none', // 禁用文字转换为大写
                         }}>
                             Buy Arcana Card
+                        </Button>
+                    </Link>
+                    <Link href="https://opensea.io/collection/karmapi-arcana">
+                        <Button variant="contained" color="secondary" sx={{
+                            background: 'linear-gradient(45deg, #705bfb, #9945fd, #c52efe)',
+                            borderRadius: 2,
+                            border: 0,
+                            color: 'white',
+                            height: '3.5rem',
+                            padding: '0 30px',
+                            boxShadow: '0 3px 5px 2px rgba(105, 81, 216, .3)',
+                            width: '18rem',
+                            fontSize: '1rem',
+                            fontWeight: 600,
+                            textTransform: 'none', // 禁用文字转换为大写
+                        }}>
+                            Buy Arcana Box
                         </Button>
                     </Link>
                 </div>
